@@ -40,12 +40,13 @@ public class PlayerMovement : MonoBehaviour
         {
             Jump();
         }
+
+        CheckIfGrounded();
     }
 
     private void FixedUpdate()
     {
         Move();
-        CheckIfGrounded();
     }
 
     public void Move()
